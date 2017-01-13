@@ -10,7 +10,8 @@
       alert("hi this is function");
     }
     </script>
-  <input type="button" name="msg()" value="call function">
+    <body>
+  <input type="button" onclick="msg()" value="call function">
 </body>
 </html>
 <br>
@@ -43,14 +44,17 @@
     <title></title>
   </head>
   <body>
+    <p id = "">
     <script>
     function getinfo()
     {
       return "hi this is vaibhav";
-    }
-    </script>
-    <script>
+
      document.write(getinfo());
+   }
+   console.log(getinfo());
     </script>
+    <button type="button" name="button"onclick="getinfo()">Click</button>
+
   </body>
 </html>
